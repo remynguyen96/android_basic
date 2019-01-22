@@ -1,0 +1,17 @@
+<resources>
+  <string name="app_name">The First Application</string>
+  <string name="edit_message">Enter a message</string>
+  <string name="button_send">Send</string>
+  <string name="enter_email">Please enter your email</string>
+  <string name="subscribe">Subscribe Chanel</string>
+  <string name="hi_msg">Hello everyone! Welcome to application android basic make by me.</string>
+
+  <!--Login Facebook-->
+  <string name="facebook">Facebook</string>
+  <string name="email">Email</string>
+  <string name="password">Password</string>
+  <string name="btn_login">Log in</string>
+  <string name="forgot">Forgot Password</string>
+  <string name="sign_up">Sign Up for Facebook</string>
+  <string name="more_question">?</string>
+</resources>

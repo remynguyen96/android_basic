@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#B2B2B2"
+  tools:context=".SecondScreen">
+
+  <EditText
+    android:id="@+id/first"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="88dp"
+    android:layout_marginLeft="88dp"
+    android:layout_marginTop="16dp"
+    android:ems="10"
+    android:hint="First Value"
+    android:inputType="number"
+    app:layout_constraintBottom_toTopOf="@+id/second"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.064"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+    android:id="@+id/second"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Second Value"
+    android:inputType="number"
+    app:layout_constraintBottom_toTopOf="@+id/result"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/first" />
+
+  <TextView
+    android:id="@+id/result"
+    android:layout_width="213dp"
+    android:layout_height="49dp"
+    android:layout_marginStart="96dp"
+    android:layout_marginLeft="96dp"
+    android:textColor="#5E7EEE"
+    android:textSize="36sp"
+    app:layout_constraintBottom_toTopOf="@+id/calculate"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/second" />
+
+  <Button
+    android:id="@+id/calculate"
+    android:layout_width="231dp"
+    android:layout_height="81dp"
+    android:background="#8EEEB3"
+    android:onClick="calculateSum"
+    android:text="Calculate"
+    android:textColor="#ffffff"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.934"
+    tools:ignore="MissingConstraints" />
+
+  <TextView
+    android:id="@+id/textView3"
+    android:layout_width="65dp"
+    android:layout_height="35dp"
+    android:text="="
+    android:textSize="36sp"
+    app:layout_constraintBottom_toTopOf="@+id/result"
+    app:layout_constraintTop_toBottomOf="@+id/textView4"
+    tools:layout_editor_absoluteX="25dp" />
+
+  <TextView
+    android:id="@+id/textView4"
+    android:layout_width="65dp"
+    android:layout_height="35dp"
+    android:text="+"
+    android:textSize="36sp"
+    app:layout_constraintBottom_toTopOf="@+id/textView3"
+    app:layout_constraintTop_toBottomOf="@+id/first"
+    tools:layout_editor_absoluteX="25dp" />
+
+</android.support.constraint.ConstraintLayout>

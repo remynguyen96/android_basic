@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#4C6BA4">
+
+  <LinearLayout
+    android:gravity="center"
+    android:layout_above="@id/formLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/facebook"
+      android:textColor="#FFFFFF"
+      android:textSize="36sp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/formLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/email"
+      android:textColor="#242424"
+      android:paddingLeft="8dp"
+      android:inputType="textEmailAddress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:hint="@string/email" />
+
+    <EditText
+      android:id="@+id/password"
+      android:textColor="#242424"
+      android:paddingLeft="8dp"
+      android:inputType="textPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:hint="@string/password" />
+
+    <Button
+      android:id="@+id/login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#4151ab"
+      android:text="@string/btn_login"
+      android:textAllCaps="false"
+      android:textColor="#ffffff"
+      android:textSize="20sp" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="16dp"
+      android:text="@string/forgot"
+      android:textColor="#ffffff"
+      android:textFontWeight="500"
+      android:textSize="14sp" />
+  </LinearLayout>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="16dp"
+    android:text="@string/sign_up"
+    android:textColor="#ffffff"
+    android:textFontWeight="500"
+    android:textSize="14sp" />
+
+</RelativeLayout>

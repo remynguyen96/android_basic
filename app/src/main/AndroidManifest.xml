@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.example.vn_ladm_chauntn.abc">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    tools:ignore="GoogleAppIndexingWarning">
+    <activity android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".DisplayMessageActivity"
+      android:label="Display Message Activity"
+      android:parentActivityName=".MainActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".MainActivity" />
+    </activity>
+    <activity
+      android:name=".SecondScreen"
+      android:label="Second Screen App" />
+    <activity
+      android:name=".FirstLayout"
+      android:label="First Layout" />
+    <activity
+      android:name=".CoreLinear"
+      android:label="Core Linear Layout" />
+    <activity
+      android:name=".Calculator"
+      android:label="Calculator" />
+    <activity android:name=".SpinnerTest" />
+    <activity android:name=".DialogAndAlert" />
+    <activity
+      android:name=".ListViewBasic"
+      android:label="ListView Basic" />
+    <activity
+      android:name=".ListViewCustom"
+      android:label="ListView Custom" />
+    <activity android:name=".SharedPreferencesBasic"></activity>
+  </application>
+
+</manifest>
